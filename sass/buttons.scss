@@ -1,0 +1,157 @@
+// //Found in sign-in.scss
+// .signupBtn {//Sign up button
+//     display: flex;
+//     cursor: pointer;
+//     color: #EFEFEF;
+//     font-size: 1.5rem;
+//     font-weight: 300;
+//     line-height: 2rem;
+//     border-bottom: var(--line);
+//     position: fixed;
+//     margin: 1rem 1rem;
+//     right: 0;
+//     top: 0;
+//     margin-left: auto;
+
+//     &__arrow {
+//         position: fixed;
+//         right: 0;
+//         top: 0;
+//         margin: 1rem 1rem;
+//     }
+// }
+
+//Found in sign-in.scss
+.button {
+    display: flex;
+    position: fixed;
+    margin: 1rem 1rem;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+
+
+    &__signup {//Sign up button
+        cursor: pointer;
+        color: #EFEFEF;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2rem;
+        border-bottom: var(--line);
+        margin-right: .25rem;
+    }
+}
+
+
+.signupBtn:hover,
+.signupBtn:active {
+    color: var(--color-text-secondary);
+}
+
+// Found in sign-in.scss
+.btnContainer { //Container for the sign-in button and forgot password button
+    @include buttonContainer;
+ 
+     &__signin {
+         @include solidButton;
+     }
+ 
+    //  &__signin:active {
+    //      transform: translateY(2px);
+    //  }
+
+     &__signin:hover,
+     &__signin:active {
+        background: #3EB54A;
+        border: solid #EFEFEF .5px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        text-decoration: none;
+
+        transform: translateY(2px);
+}
+ 
+     &__forgotpass {
+         @include dottedButton;
+     }
+ 
+     &__forgotpass:hover,
+     &__forgotpass:active {
+         color: var(--color-text-secondary);
+     }
+ }
+
+ // Found in forgot-pass + sign-up pages
+.backarrow { //Button to go back one page
+    @include backArrow;
+ }
+
+.backarrow:hover,
+.backarrow:active {
+    background: var(--color-btn-background);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////
+//login
+
+// .login {
+//     color:  var(--color-text-secondary);
+//     cursor: pointer;
+//     font-family: poppins;
+//     font-weight: 300;
+//     font-size: .75rem;
+//     letter-spacing: .07rem;
+//     margin: .3rem .1rem;
+//     background: var(--gradient-button);
+//     border-radius: 1rem;
+//     width: 3rem;
+//     height: 2rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 2000;
+// }
+
+// .login-active {
+//     color:  var(--color-text-secondary);
+//     background-color: var(--color-accent-2);
+// }
+
+//login

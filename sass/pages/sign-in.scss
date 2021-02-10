@@ -1,0 +1,42 @@
+// Sign-in button with sign-in.scss
+.signinContainer { //Container for sign-in page
+    width: 100vw;
+    background-color: var(--color-background-primary); 
+    // position: absolute;
+}
+
+.forumContainer { //Username and password container also holds sign-in and forgot password buttons
+    @include forumContainer;
+    background: var(--color-background-login);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    background: var(--color-background-login);
+    font-size: 1rem;
+    font-weight: 300;
+
+    &__text {
+        color: var(--color-text-primary);
+        letter-spacing: .65px;
+        margin-top: 1.25rem;
+        margin-bottom: .25rem;
+    }
+
+    &__placehold {
+        background: var(--color-placehold-background);
+        height: 2rem;
+        font-size: .85rem;
+    }
+
+    &__placehold:focus {
+        border: 2px solid var(--color-background-placeholder);
+    }
+}

@@ -1,0 +1,112 @@
+.lockgroup {
+    position: fixed;
+    top: 6rem;
+    z-index: 1000;
+    width: 12rem;
+    height: 12rem;
+
+}
+
+.passwordContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-placehold-background);
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: cover;
+    width: 100vw;
+    z-index: -1000;
+}
+
+.textContainer {
+    text-align: center;
+    margin-top: auto;
+
+    &__pass {
+        color: var(--color-text-tertiary);
+        font-size: 3.2rem;
+        font-weight: 300;
+        margin-top: 1rem;
+    }
+}
+
+.forgotContainer {
+    @include forumContainer;
+    height: 25rem;
+    width: 30rem;
+    margin-top: 5rem;
+    z-index: 1000;
+}
+
+.listContainer {
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template:
+    'num1 text1'
+    'num2 text2'
+    'num3 text3' ;
+    max-height: 15rem;
+    max-width: 30rem;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--color-text-tertiary);
+    margin: 0rem 2rem 2rem 2rem;
+    
+    &__text1 {
+        margin-top: .65rem;
+        margin-left: .5rem;
+    }
+
+    &__text2 {
+        margin-top: .65rem;
+        margin-left: .5rem;
+    }
+
+    &__text3 {
+        margin-top: .65rem;
+        margin-left: .5rem;
+    }
+}
+
+.resetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    max-width: 100%;
+    margin-bottom: 3rem;
+
+    &__placehold {
+        background: var(--color-placehold-alt);
+        width: 22rem;
+        height: 2.5rem;
+    }
+
+    &__placehold:focus {
+        border: 2px solid var(--color-background-placeholder);
+    }
+
+    &__resetbtn {
+        margin-top: 1rem;
+        height: 1.75rem;
+        @include solidButton;
+    }
+
+    &__resetbtn:hover,
+    &__resetbtn:active {
+        color: var(--color-text-secondary);
+    }
+}

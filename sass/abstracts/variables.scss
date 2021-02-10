@@ -1,0 +1,26 @@
+
+:root {
+    --gradient: linear-gradient(360deg, rgba(39,40,40,1) 20%, rgba(61,62,62,1) 60%, rgba(98,99,99,1) 100%);
+    
+    --gradientbtn: linear-gradient(45deg, rgba(239,239,239,1) 5%, rgba(39,40,40,1) 50%, rgba(62,181,74,1) 50%);
+
+    --gradientbtn: linear-gradient(45deg, rgba(39,38,36,1) 50%, rgba(62,181,74,1) 50%);
+
+    --color-background-primary:  #272624; 
+    --color-background-login: #1B1B1A; 
+    --color-background-placeholder: #3EB54A;
+
+    --color-text-primary: #EFEFEF;
+    --color-text-secondary: #3EB54A;
+    --color-text-tertiary: #1B1B1A;
+
+    --color-placehold-background: #EFEFEF;
+    --color-placehold-alt: #D9D9D9;
+    --color-btn-background: #3EB54A;
+    --color-btn-hover: #3EB54A;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 2px dotted rgb(62, 181, 74);
+}

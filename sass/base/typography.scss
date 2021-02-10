@@ -1,0 +1,42 @@
+
+.ctaTravel {//Sign-in page 
+    font-size: 3.2rem;
+    line-height: 7rem;
+    margin-left: 1.5rem;
+    display: flex;
+    margin-top: 9rem;
+    flex-wrap: nowrap;
+    font-family: ubuntu;
+
+    &__T {
+        color: var(--color-text-secondary);
+        top: 9rem;
+    }
+
+    &__1 {
+        color: var(--color-text-primary);
+        top: 9rem;
+    }
+}
+
+.ctaBuddy {//Sign-in page
+    font-size: 3.2rem;
+    line-height: 5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: ubuntu;
+
+    &__2 {
+        color: var(--color-text-primary);
+        margin-left: 4rem;
+    }
+
+    &__dd {
+        color: var(--color-text-secondary);
+    }
+
+    &__y {
+        color: var(--color-text-primary);
+    }
+}
