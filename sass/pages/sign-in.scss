@@ -1,8 +1,20 @@
+.outerContainer {  
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: #3EB54A;
+    
+}
+
 // Sign-in button with sign-in.scss
 .signinContainer { //Container for sign-in page
-    width: 100vw;
+    max-width: 103rem;
+    max-height: 103rem;
+    // margin: auto auto auto auto;
+    margin-top: 25%;
     background-color: var(--color-background-primary); 
-    // position: absolute;
+    border-radius: 2.5rem;
+    z-index: 10;
 }
 
 .forumContainer { //Username and password container also holds sign-in and forgot password buttons

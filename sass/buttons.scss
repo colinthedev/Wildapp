@@ -24,12 +24,9 @@
 //Found in sign-in.scss
 .button {
     display: flex;
-    position: fixed;
-    margin: 1rem 1rem;
+    margin: 0 2rem 0 auto;
     right: 0;
-    top: 0;
-    margin-left: auto;
-
+    // top: 0;
 
     &__signup {//Sign up button
         cursor: pointer;

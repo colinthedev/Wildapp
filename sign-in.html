@@ -15,40 +15,43 @@
 
     <title>Login</title>
 </head>
-<body class="signinContainer">
-    <button class="button" onclick="location.href='sign-up.html'" type="button">
-        <h3 class="button__signup">Sign up &rarr;</h3>
-    </button>
-        <hgroup class="ctaTravel">
-            <h1 class="ctaTravel__T">T</h1>
-            <h1 class="ctaTravel__1">ravel</h1>
-        </hgroup>
-        <hgroup class="ctaBuddy">
-            <h1 class="ctaBuddy__2">Bu</h1>
-            <h1 class="ctaBuddy__dd">dd</h1>
-            <h1 class="ctaBuddy__y">y</h1>
-        </hgroup>
-<form class="forumContainer" action="sign-in.html">
-    <div class="inputContainer">
-        <label class="inputContainer__text" for="email">
-            <b>User Name</b>
-        </label>
-            <input class="inputContainer__placehold" type="text" placeholder="Enter Username" name="email" required>
-            
-        <label class="inputContainer__text" for="password">
-            <b>Password</b>
-        </label>
-            <input class="inputContainer__placehold" type="text" placeholder="Enter Password" name="password" required>
-    </div>
-    <div class="btnContainer">
-        <button onclick="location.href='home.html'" type="submit" class="btnContainer__signin">Sign In &rarr;</button>
-        <button onclick="location.href='forgot-pass.html'" type="submit" class="btnContainer__forgotpass">Forgot Password?</button>
-    </div>
-</form>
-    <footer>
-        <img class="svg" src="img/footer.svg" alt="Footer img">
-    </footer>
-</body>
+
+    <body class="outerContainer">
+        <div class="signinContainer">
+            <button class="button" onclick="location.href='sign-up.html'" type="button">
+                <h3 class="button__signup">Sign up &rarr;</h3>
+            </button>
+                <hgroup class="ctaTravel">
+                    <h1 class="ctaTravel__T">T</h1>
+                    <h1 class="ctaTravel__1">ravel</h1>
+                </hgroup>
+                <hgroup class="ctaBuddy">
+                    <h1 class="ctaBuddy__2">Bu</h1>
+                    <h1 class="ctaBuddy__dd">dd</h1>
+                    <h1 class="ctaBuddy__y">y</h1>
+                </hgroup>
+        <form class="forumContainer" action="sign-in.html">
+            <div class="inputContainer">
+                <label class="inputContainer__text" for="email">
+                    <b>User Name</b>
+                </label>
+                    <input class="inputContainer__placehold" type="text" placeholder="Enter Username" name="email" required>
+                    
+                <label class="inputContainer__text" for="password">
+                    <b>Password</b>
+                </label>
+                    <input class="inputContainer__placehold" type="text" placeholder="Enter Password" name="password" required>
+            </div>
+            <div class="btnContainer">
+                <button onclick="location.href='home.html'" type="submit" class="btnContainer__signin">Sign In &rarr;</button>
+                <button onclick="location.href='forgot-pass.html'" type="submit" class="btnContainer__forgotpass">Forgot Password?</button>
+            </div>
+        </form>
+            <footer class="svgContainer">
+                <img class="svg" src="img/footersmall.svg" alt="Footer img">
+            </footer>
+        </div>
+    </body>
 </html>
 
 
