@@ -9,48 +9,59 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="home" href="index.html">
-    <link rel="sign-in" href="sign-in.html">
+    <link rel="index" href="index.html">
+    <link rel="sign-up" href="sign-up.html">
+    <link rel="forgot-pass" href="forgot-pass.html">
 
-    <title>Wilderness app</title>
+    <title>Sign-In page</title>
 </head>
-<body>
-    <div id="top">
-    <nav class="container">
-        <a href="sign-in.html">
-            <h6 class="login">Login</h6>
-        </a>
-        <ul class="links">
-            <li class="links-active__list">
-                <a class="links-active__list-a" href="#">Profile</a>
-            </li>
-            <li class="links-active__list">
-                <a class="links-active__list-a" href="#">Friends</a>
-            </li>
-            <li class="links-active__list">
-                <a class="links-active__list-a" href="#">Explore</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="burger__line-1"></div>
-            <div class="burger__line-2"></div>
-            <div class="burger__line-3"></div>
-        </div>
-    </nav>
 
-        <main class="clearfix">
-        </main>
-
-            <footer class="footer">
-                <p class="copy">&copy; 2021 Designed and developed by Colin Peters</p>
-                <p class="me">Connect with me&nbsp&nbsp @</p> 
-                <a href="mailto:colinthedev@gmail.com" class="link">colinthedev@gmail.com</a>
-                <a href="#top" class="home">Back to home</a>
+    <body class="outerContainer">
+        <div class="signinContainer">
+            <button class="button" onclick="location.href='sign-up.html'" type="button">
+                <h3 class="button__signup">Sign up &rarr;</h3>
+            </button>
+                <hgroup class="ctaTravel">
+                    <h1 class="ctaTravel__T">T</h1>
+                    <h1 class="ctaTravel__1">ravel</h1>
+                </hgroup>
+                <hgroup class="ctaBuddy">
+                    <h1 class="ctaBuddy__2">Bu</h1>
+                    <h1 class="ctaBuddy__dd">dd</h1>
+                    <h1 class="ctaBuddy__y">y</h1>
+                </hgroup>
+            <form class="forumContainer" action="sign-in.html">
+                <div class="inputContainer">
+                    <label class="inputContainer__text" for="email">
+                        <b>User Name</b>
+                    </label>
+                        <input class="inputContainer__placehold" type="text" placeholder="Enter Username" name="email" required>
+                        
+                    <label class="inputContainer__text" for="password">
+                        <b>Password</b>
+                    </label>
+                        <input class="inputContainer__placehold" type="text" placeholder="Enter Password" name="password" required>
+                </div>
+                <div class="btnContainer">
+                    <button onclick="location.href='index.html'" type="submit" class="btnContainer__signin">Sign In &rarr;</button>
+                    <button onclick="location.href='forgot-pass.html'" type="submit" class="btnContainer__forgotpass">Forgot Password?</button>
+                </div>
+            </form>
+            <footer class="svgContainer">
+                <img class="svgContainer__svg" src="img/footernewsvg.svg" alt="Footer img">
             </footer>
-    <script src="main.js"></script>
-</body>
+        </div>
+    </body>
 </html>
 
 
+<!--
+error fields 
 
+finish sign up page
 
+change typography
+
+maybe add a tooltip for username and password 
+
+When add page for sign up have two sections first page first name last name email 2nd page username password confirm password rather than everything on one page goes to second page with next button shows what page you are on in a bubble (1) (2) -->

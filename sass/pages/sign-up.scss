@@ -1,9 +1,77 @@
 .greybackground {
     background: var(--color-background-primary);
-    width: 102rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+//Sign-up page header
+.greenheader {//green background
+    margin-bottom: auto;
+    width: 100vw;
+    z-index: -1;
+}
+
+.textContainer {//Green header Text Container
+    display: flex;
+    justify-content: center;
+
+    &__signUp {
+        position: fixed;
+        top: 0;
+        color: var(--color-text-primary);
+        font-size: 4.2rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+        z-index: 2000;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+
+    &__line {
+        display: flex;
+        height: 6px;
+        width: 50%;
+        margin-left: -5px;
+        margin-right: -5px;
+        background-color: #EFEFEF;
+    }
+}
+
+.numContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    z-index: 10;
+
+    &__num {
+        font-size: 2rem;
+        font-family: inherit;
+    }
+}
+
+.numContainer.one {
+    background-color: #3EB54A;
+    color: #EFEFEF;
+}
+
+.numContainer.two {
+    background-color: #EFEFEF;
+    color: #3EB54A;
 }
 
 
+//Forum Container
 .enrollContainer {
     display: flex;
     justify-content: center;
@@ -13,8 +81,6 @@
     font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
-    // margin-top: auto;
-    height: 20rem;
     width: 20rem;
 
     &__text {
@@ -36,10 +102,25 @@
     }
 }
 
+//White Footer
+.signupFooter {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0;
 
-.nextContainer {
+    &__whitefooter {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+
+.nextContainer {//Next BTN Container
    position: absolute; 
-   bottom: 15vh;
+   bottom: 10vh;
    right: 20vw;
 
     &__btnn {

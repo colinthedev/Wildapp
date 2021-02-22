@@ -30,14 +30,11 @@ a {
 }
 
 html {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
     box-sizing: border-box;
     font-size: 62.5%; // 1rem=10px, 10px/16px = 62.5%
-    height: 100vh;
+    // height: 100vh;
     overflow-x: hidden;
+    overflow-y: scroll;
     font-family: Ubuntu;
 }
 

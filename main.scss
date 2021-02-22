@@ -5,13 +5,8 @@
 @import "sass/base/reset.scss";
 @import "sass/base/typography.scss";
 
-@import "sass/layout/footer.scss";
-@import "sass/layout/header.scss";
-@import "sass/layout/navigation.scss";
+@import "sass/pages/forgot-pass.scss";
+@import "sass/pages/index.scss";
+@import "sass/pages/sign-up.scss";
 
-@import "sass/pages/forgot-pass";
-@import "sass/pages/home";
-@import "sass/pages/sign-in";
-@import "sass/pages/sign-up";
-
-@import "sass/buttons";
+@import "sass/buttons.scss";

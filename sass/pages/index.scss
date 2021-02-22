@@ -1,20 +1,17 @@
 .outerContainer {  
-    display: block;
-    width: 100vw;
-    height: 100vh;
+    // display: block;
+    // width: 100vw;
+    // height: 100vh;
     background: #3EB54A;
-    
+    overflow: hidden;
 }
 
-// Sign-in button with sign-in.scss
-.signinContainer { //Container for sign-in page
-    max-width: 103rem;
-    max-height: 103rem;
+.signinContainer { 
+    max-width: 104rem;
+    height: 100vh;
     // margin: auto auto auto auto;
-    margin-top: 25%;
+    // margin-top: 25%;
     background-color: var(--color-background-primary); 
-    border-radius: 2.5rem;
-    z-index: 10;
 }
 
 .forumContainer { //Username and password container also holds sign-in and forgot password buttons
@@ -25,6 +22,8 @@
     margin-top: 3rem;
     height: 20rem;
     width: 20rem;
+    
+    z-index: 10000;
 }
 
 .inputContainer {
@@ -34,6 +33,8 @@
     background: var(--color-background-login);
     font-size: 1rem;
     font-weight: 300;
+
+    z-index: 100000;
 
     &__text {
         color: var(--color-text-primary);
@@ -50,5 +51,19 @@
 
     &__placehold:focus {
         border: 2px solid var(--color-background-placeholder);
+    }
+}
+
+.svgContainer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+
+    // z-index: -1;
+
+    &__svg {
+        display: block;
+        width: 100%;
+        margin-top: auto;
     }
 }
